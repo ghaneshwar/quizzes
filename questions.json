@@ -1,5 +1,38 @@
 [
  {
+  "id": "awards-booker-2025",
+  "category": "Awards",
+  "question": "Who won the 2025 Booker Prize?",
+  "year": 2025,
+  "event": "awards-booker",
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "David Szalay (for the novel \"Flesh\")",
+  "detail": "David Szalay's novel \"Flesh\" was named the winner of the 2025 Booker Prize at a ceremony in London on 10 November 2025, making him the first Hungarian-British author to win.",
+  "sources": [
+   "https://thebookerprizes.com/the-booker-library/prize-years/2025",
+   "https://www.npr.org/2025/11/10/nx-s1-5604157/booker-prize-winner-2025-david-szalay-flesh",
+   "https://thebookerprizes.com/the-booker-library/books/flesh"
+  ]
+ },
+ {
+  "id": "awards-turner-2025",
+  "category": "Awards",
+  "question": "Who won the 2025 Turner Prize?",
+  "year": 2025,
+  "event": "awards-turner",
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "Nnena Kalu",
+  "detail": "Nnena Kalu won the 2025 Turner Prize (£25,000) at a ceremony at Bradford Grammar School on 9 December 2025, becoming the first artist with a learning disability to win it.",
+  "sources": [
+   "https://news.artnet.com/art-world/nnena-kalu-turner-prize-winner-2025-2726186",
+   "https://www.artforum.com/news/nnena-kalu-wins-2025-turner-prize-1234740661/",
+   "https://bradfordculture.co.uk/programme/turner-prize-2025/",
+   "https://en.wikipedia.org/wiki/2025_Turner_Prize"
+  ]
+ },
+ {
   "id": "fb-facup-2026",
   "category": "Football",
   "question": "Who won the 2026 FA Cup final?",
@@ -320,7 +353,7 @@
   "detail": "Dame Sarah Mullally became the 106th Archbishop of Canterbury and the first woman in the role. Her election was confirmed on 28 January 2026 and she was installed at Canterbury Cathedral on 25 March 2026.",
   "sources": [
    "https://www.archbishopofcanterbury.org/node/32/bishop-sarah-mullally-be-confirmed-archbishop-canterbury",
-   "https://episcopalnewsservice.org/2026/01/28/sarah-mullally-confirmed-as-106th-archbishop-of-canterbury/",
+   "https://episcopalnewsservice.org/2026/03/25/anglican-leaders-gather-for-installation-of-archbishop-of-canterbury-sarah-mullally/",
    "https://www.npr.org/2026/03/25/nx-s1-5753707/archbishop-canterbury-church-england-sarah-mullally"
   ]
  },
@@ -334,9 +367,10 @@
   "answer": "John Healey",
   "detail": "John Healey has been Chancellor of the Exchequer since 20 July 2026, when new Prime Minister Andy Burnham appointed him to replace Rachel Reeves.",
   "sources": [
-   "https://en.wikipedia.org/wiki/Chancellor_of_the_Exchequer",
-   "https://theconversation.com/john-healey-is-the-uks-chancellor-what-burnhams-surprise-pick-says-about-his-style-of-government-287896",
-   "https://simple.wikipedia.org/wiki/Chancellor_of_the_Exchequer"
+   "https://uk.news.yahoo.com/andy-burnham-appoints-john-healey-171439264.html",
+   "https://www.moneymarketing.co.uk/news/burnham-appoints-john-healey-as-new-chancellor/",
+   "https://www.gbnews.com/money/andy-burnham-john-healey-chancellor",
+   "https://en.wikipedia.org/wiki/John_Healey"
   ]
  },
  {
@@ -351,8 +385,7 @@
   "sources": [
    "https://www.gov.uk/government/ministers/prime-minister",
    "https://www.nbcnews.com/world/united-kingdom/andy-burnham-british-prime-minister-keir-starmer-labour-king-charles-rcna588324",
-   "https://www.cfr.org/articles/andy-burnham-what-to-expect-from-the-uks-new-prime-minister",
-   "https://en.wikipedia.org/wiki/Prime_Minister_of_the_United_Kingdom"
+   "https://www.cfr.org/articles/andy-burnham-what-to-expect-from-the-uks-new-prime-minister"
   ]
  }
 ]
