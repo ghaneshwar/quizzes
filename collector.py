@@ -84,11 +84,18 @@ def main():
             r.update(answer=p["answer"], detail=p.get("detail", ""), sources=p["sources"], status="verified")
 
     for e in watch:
-        if not due(e) or runs >= MAX_ENTRIES:
-            continue
         yearly = "{year}" in e["q"]
-        rid = f"{e['id']}-{today.year}" if yearly else e["id"]
-        q = e["q"].replace("{year}", str(today.year))
+        year = today.year
+        if yearly and "months" in e and "years" not in e and today.month < min(e["months"]):
+            # this year's event hasn't happened yet: record last year's result so
+            # there is always a "current winner" (skipped once it is verified)
+            year -= 1
+        elif not due(e):
+            continue
+        if runs >= MAX_ENTRIES:
+            continue
+        rid = f"{e['id']}-{year}" if yearly else e["id"]
+        q = e["q"].replace("{year}", str(year))
         rec = recs.get(rid)
         # dated events: once verified, stop spending on them
         if rec and rec["status"] == "verified" and "months" in e and not e.get("recheck"):
@@ -113,7 +120,7 @@ def main():
         new = {"answer": r["answer"], "detail": r.get("detail", ""), "sources": r["sources"]}
         now = today.isoformat()
         if rec is None:
-            recs[rid] = dict(id=rid, category=e["cat"], question=q, year=today.year,
+            recs[rid] = dict(id=rid, category=e["cat"], question=q, year=year, event=e["id"],
                              checked=now, status="verified" if ok else "review", **new)
             if not ok:
                 report.append(f"- NEEDS REVIEW `{rid}`: {q} -> {r['answer']} ({r.get('confidence')}, {len(domains)} source domains)")
