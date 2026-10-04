@@ -12,7 +12,7 @@
 {"id":"golf-uso","cat":"Golf","q":"Who won the {year} US Open golf (men's)?","months":[6,7]},
 {"id":"golf-open","cat":"Golf","q":"Who won the {year} Open Championship golf?","months":[7,8]},
 {"id":"fb-worldcup","cat":"Football","q":"Who won the {year} FIFA World Cup (men's)?","years":[2026],"months":[7,8]},
-{"id":"fb-pl","cat":"Football","q":"Who won the Premier League in the {year} season-ending (most recent completed season)?","months":[5,6]},
+{"id":"fb-pl","cat":"Football","q":"Who won the Premier League title in the season that ended in {year}?","months":[5,6]},
 {"id":"fb-facup","cat":"Football","q":"Who won the {year} FA Cup final?","months":[5,6]},
 {"id":"fb-ucl","cat":"Football","q":"Who won the {year} UEFA Champions League final?","months":[5,6]},
 {"id":"oscar-picture","cat":"Oscars","q":"Which film won Best Picture at the {year} Academy Awards?","months":[3,4]},

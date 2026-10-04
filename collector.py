@@ -38,7 +38,7 @@ def save(path, obj):
 
 
 def due(e):
-    if "months" in e and today.month not in e["months"]:
+    if "months" in e and today.month not in e["months"] and not os.environ.get("BACKFILL"):
         return False
     if "years" in e and today.year not in e["years"]:
         return False
