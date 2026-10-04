@@ -14,7 +14,7 @@ import anthropic
 MODEL = os.environ.get("MODEL", "claude-sonnet-5-5")  # change here if the model name is retired
 MAX_ENTRIES = int(os.environ.get("MAX_ENTRIES", "60"))  # cost safety cap per run
 today = datetime.date.today()
-client = anthropic.Anthropic()  # reads ANTHROPIC_API_KEY from the environment
+client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"].strip())  # strip guards against pasted whitespace
 
 PROMPT = """Today is {date}. Research this pub-quiz question using web search:
 {q}
@@ -74,7 +74,7 @@ def ask(q, hint):
 def main():
     watch = load("watchlist.json", [])
     recs = {r["id"]: r for r in load("questions.json", [])}
-    report, runs, fails = [], 0, 0
+    report, runs, fails, aborted = [], 0, 0, False
 
     # apply approvals: ids listed in approve.json promote their proposed answer
     for rid in load("approve.json", []):
@@ -98,10 +98,11 @@ def main():
             r = ask(q, e.get("hint", ""))
             fails = 0
         except Exception as ex:  # includes running out of credit
-            print(f"FAILED {rid}: {ex}")
+            print(f"FAILED {rid}: {ex!r} | cause: {ex.__cause__!r}")
             fails += 1
             if fails >= 3:
                 print("Three failures in a row; stopping (check credit/key).")
+                aborted = True
                 break
             continue
         if not r or not r.get("answer"):
@@ -134,6 +135,8 @@ def main():
         with open("review_report.md", "w", encoding="utf-8") as f:
             f.write("Items needing your attention:\n\n" + "\n".join(report) + "\n")
     print(f"Done: {runs} checked, {len(report)} flagged.")
+    if aborted:
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":
