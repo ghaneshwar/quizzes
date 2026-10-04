@@ -1,5 +1,253 @@
 [
  {
+  "id": "fb-facup-2026",
+  "category": "Football",
+  "question": "Who won the 2026 FA Cup final?",
+  "year": 2026,
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "Manchester City",
+  "detail": "Manchester City beat Chelsea 1-0 at Wembley on 16 May 2026 to win a record-extending eighth FA Cup, with Antoine Semenyo scoring the only goal.",
+  "sources": [
+   "https://www.thefa.com/news/2026/may/16/emirates-fa-cup-final-chelsea-v-manchester-city-report-20261605",
+   "https://www.mancity.com/news/mens/manchester-city-win-202526-fa-cup-final-63914542",
+   "https://www.topendsports.com/events/soccer/fa-cup/2026.htm"
+  ]
+ },
+ {
+  "id": "fb-pl-2026",
+  "category": "Football",
+  "question": "Who won the Premier League title in the season that ended in 2026?",
+  "year": 2026,
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "Arsenal",
+  "detail": "Arsenal won the 2025/26 Premier League, their first title in 22 years and their fourth overall. They were confirmed champions on 19 May 2026 when Manchester City drew 1-1 at Bournemouth, and they lifted the trophy on the final day, 24 May.",
+  "sources": [
+   "https://www.premierleague.com/en/news/4662306/arsenal-win-2025-26-premier-league-title-ending-22-year-wait-to-be-crowned-champions-again",
+   "https://www.arsenal.com/news/arsenal-crowned-202526-premier-league-champions",
+   "https://en.wikipedia.org/wiki/2025%E2%80%9326_Premier_League"
+  ]
+ },
+ {
+  "id": "fb-ucl-2026",
+  "category": "Football",
+  "question": "Who won the 2026 UEFA Champions League final?",
+  "year": 2026,
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "Paris Saint-Germain",
+  "detail": "PSG beat Arsenal 4–3 on penalties after a 1–1 draw after extra time at the Puskás Aréna in Budapest on 30 May 2026, retaining the title.",
+  "sources": [
+   "https://www.olympics.com/en/news/football-uefa-mens-champions-league-final-2026-arsenal-psg-results",
+   "https://www.uefa.com/uefachampionsleague/history/seasons/2026/",
+   "https://en.wikipedia.org/wiki/2026_UEFA_Champions_League_final"
+  ]
+ },
+ {
+  "id": "fb-worldcup-2026",
+  "category": "Football",
+  "question": "Who won the 2026 FIFA World Cup (men's)?",
+  "year": 2026,
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "Spain",
+  "detail": "Spain beat Argentina 1-0 after extra time in the final on July 19, 2026 at MetLife Stadium (New York New Jersey Stadium), with Ferran Torres scoring in the 106th minute for Spain's second World Cup title.",
+  "sources": [
+   "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/spain-argentina-final-report-highlights",
+   "https://www.npr.org/2026/07/19/nx-s1-5899071/2026-world-cup-fifa-argentina-spain-final-championship",
+   "https://www.cbsnews.com/news/2026-fifa-world-cup-final-spain-argentina-sunday/",
+   "https://abcnews.com/GMA/Culture/spain-argentina-win-2026-world-cup/story?id=134824556"
+  ]
+ },
+ {
+  "id": "golf-masters-2026",
+  "category": "Golf",
+  "question": "Who won the 2026 Masters golf tournament?",
+  "year": 2026,
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "Rory McIlroy",
+  "detail": "McIlroy won the 2026 Masters (April 9–12, Augusta National) at 12-under 276, one stroke ahead of Scottie Scheffler, and became the fourth back-to-back Masters champion.",
+  "sources": [
+   "https://www.golfchannel.com/pga-tour/live/2026-masters-live-updates-final-round-leaderboard-scores-results-highlights-and-news",
+   "https://www.skysports.com/golf/news/24512/13529496/the-masters-2026-leaderboard-latest-golf-scores-from-augusta-national-and-tee-times-for-opening-major-of-the-year",
+   "https://en.wikipedia.org/wiki/2026_Masters_Tournament"
+  ]
+ },
+ {
+  "id": "golf-open-2026",
+  "category": "Golf",
+  "question": "Who won the 2026 Open Championship golf?",
+  "year": 2026,
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "Ryan Fox",
+  "detail": "New Zealand's Ryan Fox won the 154th Open Championship at Royal Birkdale on 19 July 2026. He birdied the 72nd hole to finish 10-under (270), one stroke ahead of Cameron Young, for his first major title.",
+  "sources": [
+   "https://www.golfchannel.com/pga-tour/news/british-open-2026-prize-money-full-payout-from-17-5-million-purse",
+   "https://www.golfmonthly.com/news/the-open-championship-prize-money-payout-2026",
+   "https://en.wikipedia.org/wiki/2026_Open_Championship"
+  ]
+ },
+ {
+  "id": "golf-pga-2026",
+  "category": "Golf",
+  "question": "Who won the 2026 PGA Championship (men's golf)?",
+  "year": 2026,
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "Aaron Rai",
+  "detail": "England's Aaron Rai won the 108th PGA Championship at Aronimink Golf Club on May 17, 2026. He finished at 9-under, three strokes ahead of Jon Rahm and Alex Smalley, for his first major title.",
+  "sources": [
+   "https://www.pgachampionship.com/news-media/articles/aaron-rai-wins-the-2026-pga-championship-at-aronimink",
+   "https://www.golfchannel.com/pga-of-america/live/pga-championship-2026-live-updates-leaderboard-scores-highlights-and-news-from-final-round",
+   "https://en.wikipedia.org/wiki/2026_PGA_Championship"
+  ]
+ },
+ {
+  "id": "golf-uso-2026",
+  "category": "Golf",
+  "question": "Who won the 2026 US Open golf (men's)?",
+  "year": 2026,
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "Wyndham Clark",
+  "detail": "Clark won the 126th U.S. Open at Shinnecock Hills (June 18–21, 2026) by one stroke over Sam Burns, finishing at 4-under 276 for his second U.S. Open title after 2023.",
+  "sources": [
+   "https://www.usopen.com/2026/articles/second-wynd--clark-wins-by-one-at-shinnecock-hills-.html",
+   "https://www.pgatour.com/tournaments/2026/u.s-open/R2026026",
+   "https://www.espn.com/golf/story/_/id/49138277/wyndham-clark-hung-won-2026-us-open-shinnecock-hills",
+   "https://www.golfchannel.com/usga/news/wyndham-clark-wins-second-u-s-open-title-prevailing-at-shinnecock-hills",
+   "https://www.skysports.com/golf/news/12176/13554329/us-open-2026-leaderboard-latest-golf-scores-from-shinnecock-hills-in-new-york-and-tee-times-for-third-mens-golf-major"
+  ]
+ },
+ {
+  "id": "oscar-actor-2026",
+  "category": "Oscars",
+  "question": "Who won Best Actor at the 2026 Academy Awards?",
+  "year": 2026,
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "Michael B. Jordan",
+  "detail": "Michael B. Jordan won Best Actor for his dual-role performance in \"Sinners\" at the 98th Academy Awards on March 15, 2026, earning his first Oscar.",
+  "sources": [
+   "https://www.cbsnews.com/live-updates/oscar-winners-2026-list/",
+   "https://www.aljazeera.com/news/2026/3/16/oscars-2026-full-list-of-winners",
+   "https://www.npr.org/nx-s1-5739286"
+  ]
+ },
+ {
+  "id": "oscar-actress-2026",
+  "category": "Oscars",
+  "question": "Who won Best Actress at the 2026 Academy Awards?",
+  "year": 2026,
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "Jessie Buckley",
+  "detail": "Jessie Buckley won Best Actress for playing Agnes Shakespeare in \"Hamnet\" at the 98th Academy Awards on March 15, 2026, and was the first Irish woman to win the category.",
+  "sources": [
+   "https://www.npr.org/2026/03/15/nx-s1-5739287/oscars-2026-winners-list-best-picture-actor-actress",
+   "https://abcnews.com/GMA/Culture/oscars-2026-full-winners-list/story?id=130769299",
+   "https://www.aljazeera.com/news/2026/3/16/oscars-2026-full-list-of-winners",
+   "https://www.pbs.org/newshour/amp/arts/heres-a-full-list-of-2026-academy-awards-winners"
+  ]
+ },
+ {
+  "id": "oscar-director-2026",
+  "category": "Oscars",
+  "question": "Who won Best Director at the 2026 Academy Awards?",
+  "year": 2026,
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "Paul Thomas Anderson",
+  "detail": "Paul Thomas Anderson won Best Director for \"One Battle After Another\" at the 98th Academy Awards on March 15, 2026, and it was his first Oscar win.",
+  "sources": [
+   "https://abcnews.com/GMA/Culture/oscars-2026-full-winners-list/story?id=130769299",
+   "https://www.aljazeera.com/news/2026/3/16/oscars-2026-full-list-of-winners",
+   "https://www.pbs.org/newshour/amp/arts/heres-a-full-list-of-2026-academy-awards-winners",
+   "https://www.hollywoodreporter.com/lists/oscars-2026-winners-list/"
+  ]
+ },
+ {
+  "id": "oscar-picture-2026",
+  "category": "Oscars",
+  "question": "Which film won Best Picture at the 2026 Academy Awards?",
+  "year": 2026,
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "One Battle After Another",
+  "detail": "Paul Thomas Anderson's \"One Battle After Another\" won Best Picture at the 98th Academy Awards on March 15, 2026, and took six Oscars in total, including Best Director.",
+  "sources": [
+   "https://www.oscars.org/oscars/ceremonies/2026",
+   "https://www.cnn.com/entertainment/live-news/oscars-academy-awards-03-15-26",
+   "https://www.npr.org/2026/03/15/nx-s1-5739287/oscars-2026-winners-list-best-picture-actor-actress",
+   "https://abcnews.com/GMA/Culture/oscars-2026-full-winners-list/story?id=130769299"
+  ]
+ },
+ {
+  "id": "tennis-ao-m-2026",
+  "category": "Tennis",
+  "question": "Who won the 2026 Australian Open men's singles?",
+  "year": 2026,
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "Carlos Alcaraz",
+  "detail": "Alcaraz beat Novak Djokovic 2-6, 6-2, 6-3, 7-5 in the final at Rod Laver Arena on 1 February 2026, winning his first Australian Open title and completing the career Grand Slam.",
+  "sources": [
+   "https://www.atptour.com/en/news/alcaraz-djokovic-australian-open-2026-final",
+   "https://ausopen.com/articles/news/major-milestone-alcaraz-completes-slam-set-ao-2026-title",
+   "https://www.aljazeera.com/sports/2026/2/1/alcaraz-beats-djokovic-to-win-australian-open-completes-career-slam",
+   "https://en.wikipedia.org/wiki/2026_Australian_Open_%E2%80%93_Men%27s_singles"
+  ]
+ },
+ {
+  "id": "tennis-ao-w-2026",
+  "category": "Tennis",
+  "question": "Who won the 2026 Australian Open women's singles?",
+  "year": 2026,
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "Elena Rybakina",
+  "detail": "Rybakina of Kazakhstan beat world No. 1 Aryna Sabalenka 6-4, 4-6, 6-4 in the final in Melbourne on 31 January 2026, winning her first Australian Open title and second Grand Slam.",
+  "sources": [
+   "https://www.abc.net.au/news/2026-01-31/australian-open-womens-singles-final-live-sabalenka-rybakina/106291584",
+   "https://www.npr.org/2026/01/31/nx-s1-5695207/elena-rybakina-wins-australian-open",
+   "https://www.olympics.com/en/news/australian-open-2026-womens-singles-final-aryna-sabalenka-elena-rybakina-live-updates"
+  ]
+ },
+ {
+  "id": "tennis-fo-m-2026",
+  "category": "Tennis",
+  "question": "Who won the 2026 French Open men's singles?",
+  "year": 2026,
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "Alexander Zverev",
+  "detail": "Zverev beat Italy's Flavio Cobolli 6-1, 4-6, 6-4, 6-7(5-7), 6-1 in the final on 7 June 2026, winning his first Grand Slam title.",
+  "sources": [
+   "https://www.olympics.com/en/news/french-open-2026-mens-singles-final-alexander-zverev-flavio-cobolli-live-updates-results",
+   "https://www.rolandgarros.com/en-us/photo-gallery/2026-edition-gallery-photos-champions-finalists-roland-garros-2026",
+   "https://www.espn.com/tennis/story/_/id/40269330/french-open-winners-mens-womens-singles-champions",
+   "https://en.wikipedia.org/wiki/2026_French_Open_%E2%80%93_Men's_singles"
+  ]
+ },
+ {
+  "id": "tennis-fo-w-2026",
+  "category": "Tennis",
+  "question": "Who won the 2026 French Open women's singles?",
+  "year": 2026,
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "Mirra Andreeva",
+  "detail": "Andreeva, the No. 8 seed, beat Polish qualifier Maja Chwalińska 6-3, 6-2 in the final on 6 June 2026 to win her first Grand Slam title.",
+  "sources": [
+   "https://www.olympics.com/en/news/french-open-2026-roland-garros-live-updates-womens-singles-final-mirra-andreeva-maja-chwalinska",
+   "https://www.espn.com/tennis/scoreboard/tournament/_/eventId/172-2026/competitionType/2",
+   "https://en.wikipedia.org/wiki/2026_French_Open_%E2%80%93_Women's_singles"
+  ]
+ },
+ {
   "id": "tennis-uso-m-2026",
   "category": "Tennis",
   "question": "Who won the 2026 US Open men's singles?",
@@ -30,6 +278,38 @@
   ]
  },
  {
+  "id": "tennis-wim-m-2026",
+  "category": "Tennis",
+  "question": "Who won the 2026 Wimbledon men's singles?",
+  "year": 2026,
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "Jannik Sinner",
+  "detail": "Defending champion Jannik Sinner of Italy beat Alexander Zverev 6–7(7), 7–6(2), 6–3, 6–4 in the final on 12 July 2026, winning his second Wimbledon title and fifth Grand Slam title.",
+  "sources": [
+   "https://www.wimbledon.com/en_GB/scores/draws/2026_MS_draw.pdf",
+   "https://www.britannica.com/question/Who-won-Wimbledon-in-2026",
+   "https://en.wikipedia.org/wiki/2026_Wimbledon_Championships_%E2%80%93_Men's_singles",
+   "https://sports.yahoo.com/tennis/live/wimbledon-mens-final-jannik-sinner-repeats-as-champion-after-weathering-early-challenge-from-alexander-zverev-140000546.html"
+  ]
+ },
+ {
+  "id": "tennis-wim-w-2026",
+  "category": "Tennis",
+  "question": "Who won the 2026 Wimbledon women's singles?",
+  "year": 2026,
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "Linda Nosková",
+  "detail": "Ninth seed Linda Nosková beat fellow Czech Karolína Muchová 6-2, 5-7, 6-3 in the final on 11 July 2026 to win her first Grand Slam title.",
+  "sources": [
+   "https://www.olympics.com/en/news/wimbledon-2026-womens-singles-final-results-karolina-muchova-linda-noskova",
+   "https://www.cbssports.com/tennis/news/wimbledon-2026-results-winners-jannik-sinner-linda-noskova/live/",
+   "https://www.espn.com/tennis/story/_/id/49332915/wimbledon-2026-today-blog-11-07-2026-live-updates-news-score-results-karolina-muchova-linda-noskova-all-czech-women-final-july-11",
+   "https://en.wikipedia.org/wiki/2026_Wimbledon_Championships_%E2%80%93_Women's_singles"
+  ]
+ },
+ {
   "id": "uk-abc",
   "category": "UK posts",
   "question": "Who is the current Archbishop of Canterbury?",
@@ -40,7 +320,7 @@
   "detail": "Dame Sarah Mullally became the 106th Archbishop of Canterbury and the first woman in the role. Her election was confirmed on 28 January 2026 and she was installed at Canterbury Cathedral on 25 March 2026.",
   "sources": [
    "https://www.archbishopofcanterbury.org/node/32/bishop-sarah-mullally-be-confirmed-archbishop-canterbury",
-   "https://episcopalnewsservice.org/2026/03/25/anglican-leaders-gather-for-installation-of-archbishop-of-canterbury-sarah-mullally/",
+   "https://episcopalnewsservice.org/2026/01/28/sarah-mullally-confirmed-as-106th-archbishop-of-canterbury/",
    "https://www.npr.org/2026/03/25/nx-s1-5753707/archbishop-canterbury-church-england-sarah-mullally"
   ]
  },
@@ -71,7 +351,8 @@
   "sources": [
    "https://www.gov.uk/government/ministers/prime-minister",
    "https://www.nbcnews.com/world/united-kingdom/andy-burnham-british-prime-minister-keir-starmer-labour-king-charles-rcna588324",
-   "https://www.cfr.org/articles/andy-burnham-what-to-expect-from-the-uks-new-prime-minister"
+   "https://www.cfr.org/articles/andy-burnham-what-to-expect-from-the-uks-new-prime-minister",
+   "https://en.wikipedia.org/wiki/Prime_Minister_of_the_United_Kingdom"
   ]
  }
 ]
