@@ -23,5 +23,22 @@
 {"id":"uk-abc","cat":"UK posts","q":"Who is the current Archbishop of Canterbury?"},
 {"id":"uk-chancellor","cat":"UK posts","q":"Who is the current UK Chancellor of the Exchequer?"},
 {"id":"awards-booker","cat":"Awards","q":"Who won the {year} Booker Prize?","months":[11,12]},
-{"id":"awards-turner","cat":"Awards","q":"Who won the {year} Turner Prize?","months":[12]}
+{"id":"awards-turner","cat":"Awards","q":"Who won the {year} Turner Prize?","months":[12]},
+{"id":"tv-imaceleb","cat":"UK TV","q":"Who won the {year} series of I'm a Celebrity... Get Me Out of Here! (UK, ITV)?","hint":"Name the winner (King or Queen of the Jungle) and the runners-up.","months":[11,12]},
+{"id":"tv-strictly","cat":"UK TV","q":"Who won the {year} series of Strictly Come Dancing (BBC)?","hint":"Name the celebrity and their professional partner, and the runners-up.","months":[12]},
+{"id":"tv-traitors","cat":"UK TV","q":"Who won the {year} series of The Traitors UK (BBC, civilian version)?","hint":"Name all the winners and the prize money. This is not the celebrity edition.","months":[1,2]},
+{"id":"tv-celebtraitors","cat":"UK TV","q":"Who won the {year} series of Celebrity Traitors UK (BBC)?","hint":"Only the celebrity edition. Name the winner(s).","months":[11,12]},
+{"id":"tv-apprentice","cat":"UK TV","q":"Who won the {year} series of The Apprentice UK (BBC)?","hint":"Name the winner and their business.","months":[3,4,5,6]},
+{"id":"tv-bakeoff","cat":"UK TV","q":"Who won the {year} series of The Great British Bake Off (Channel 4)?","hint":"Name the winner and the finalists.","months":[10,11,12]},
+{"id":"tv-loveisland","cat":"UK TV","q":"Who won the {year} summer series of Love Island UK (ITV2)?","hint":"Name the winning couple and the runners-up.","months":[7,8,9]},
+{"id":"tv-bgt","cat":"UK TV","q":"Who won the {year} series of Britain's Got Talent (ITV)?","hint":"Name the winning act and what they do.","months":[5,6,7]},
+{"id":"cycle-tdf","cat":"Cycling","q":"Who won the {year} Tour de France men's general classification?","hint":"Mention the team and winning margin.","months":[7,8]},
+{"id":"cycle-giro","cat":"Cycling","q":"Who won the {year} Giro d'Italia men's general classification?","hint":"Mention the team and winning margin.","months":[5,6]},
+{"id":"cycle-vuelta","cat":"Cycling","q":"Who won the {year} Vuelta a Espana men's general classification?","hint":"Mention the team and winning margin.","months":[9,10]},
+{"id":"race-grandnational","cat":"Horse racing","q":"Which horse won the {year} Grand National at Aintree?","hint":"Name the horse, jockey and trainer.","months":[4,5]},
+{"id":"fb-spfl","cat":"Football","q":"Who won the Scottish Premiership title in the season that ended in {year}?","hint":"The league was formerly called the Scottish Premier League.","months":[5,6]},
+{"id":"fb-scottishcup","cat":"Football","q":"Who won the {year} Scottish Cup final?","hint":"Give the score and opponent.","months":[5,6]},
+{"id":"fb-leaguecup","cat":"Football","q":"Who won the Scottish League Cup (Premier Sports Cup) final played in {year}?","hint":"The final is now played in December. Give the score and opponent.","months":[12]},
+{"id":"snooker-worlds","cat":"Snooker","q":"Who won the {year} World Snooker Championship at the Crucible?","hint":"Give the final score and runner-up.","months":[5,6]},
+{"id":"rugby-sixnations","cat":"Rugby","q":"Who won the {year} men's Six Nations?","hint":"Say whether it was a Grand Slam or Triple Crown, and who finished last.","months":[3,4]}
 ]
