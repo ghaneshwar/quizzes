@@ -1,1 +1,77 @@
-[]
+[
+ {
+  "id": "tennis-uso-m-2026",
+  "category": "Tennis",
+  "question": "Who won the 2026 US Open men's singles?",
+  "year": 2026,
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "Alexander Zverev",
+  "detail": "Top seed Alexander Zverev of Germany beat No. 8 seed Ben Shelton 6-3, 7-6(2), 5-7, 6-2 in the final on September 13, 2026, to win his first US Open title and second major after the 2026 French Open.",
+  "sources": [
+   "https://www.cnn.com/2026/09/13/sport/us-open-mens-final-2026",
+   "https://www.usopen.org/en_US/scores/draws/2026_MS_draw.pdf",
+   "https://www.cbssports.com/tennis/news/us-open-2026-results-scores-brackets/live/"
+  ]
+ },
+ {
+  "id": "tennis-uso-w-2026",
+  "category": "Tennis",
+  "question": "Who won the 2026 US Open women's singles?",
+  "year": 2026,
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "Elena Rybakina",
+  "detail": "Rybakina of Kazakhstan beat two-time defending champion Aryna Sabalenka 6-4, 5-7, 6-2 in the final at Arthur Ashe Stadium on September 12, 2026, for her third Grand Slam title.",
+  "sources": [
+   "https://www.usopen.org/en_US/scores/draws/2026_WS_draw.pdf",
+   "https://sports.yahoo.com/tennis/live/elena-rybakina-aryna-sabalenka-score-results-live-updates-us-open-womens-singles-final-where-to-watch-190000121.html",
+   "https://en.wikipedia.org/wiki/2026_US_Open_%E2%80%93_Women's_singles"
+  ]
+ },
+ {
+  "id": "uk-abc",
+  "category": "UK posts",
+  "question": "Who is the current Archbishop of Canterbury?",
+  "year": 2026,
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "Sarah Mullally",
+  "detail": "Dame Sarah Mullally became the 106th Archbishop of Canterbury and the first woman in the role. Her election was confirmed on 28 January 2026 and she was installed at Canterbury Cathedral on 25 March 2026.",
+  "sources": [
+   "https://www.archbishopofcanterbury.org/node/32/bishop-sarah-mullally-be-confirmed-archbishop-canterbury",
+   "https://episcopalnewsservice.org/2026/03/25/anglican-leaders-gather-for-installation-of-archbishop-of-canterbury-sarah-mullally/",
+   "https://www.npr.org/2026/03/25/nx-s1-5753707/archbishop-canterbury-church-england-sarah-mullally"
+  ]
+ },
+ {
+  "id": "uk-chancellor",
+  "category": "UK posts",
+  "question": "Who is the current UK Chancellor of the Exchequer?",
+  "year": 2026,
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "John Healey",
+  "detail": "John Healey has been Chancellor of the Exchequer since 20 July 2026, when new Prime Minister Andy Burnham appointed him to replace Rachel Reeves.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Chancellor_of_the_Exchequer",
+   "https://theconversation.com/john-healey-is-the-uks-chancellor-what-burnhams-surprise-pick-says-about-his-style-of-government-287896",
+   "https://simple.wikipedia.org/wiki/Chancellor_of_the_Exchequer"
+  ]
+ },
+ {
+  "id": "uk-pm",
+  "category": "UK posts",
+  "question": "Who is the current Prime Minister of the United Kingdom, and when did they take office?",
+  "year": 2026,
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "Andy Burnham, who took office on 20 July 2026",
+  "detail": "Burnham became Prime Minister on 20 July 2026 after meeting King Charles III. He replaced Keir Starmer, who had agreed to step down, and is the 59th person to hold the office.",
+  "sources": [
+   "https://www.gov.uk/government/ministers/prime-minister",
+   "https://www.nbcnews.com/world/united-kingdom/andy-burnham-british-prime-minister-keir-starmer-labour-king-charles-rcna588324",
+   "https://en.wikipedia.org/wiki/Prime_Minister_of_the_United_Kingdom"
+  ]
+ }
+]
