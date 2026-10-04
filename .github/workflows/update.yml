@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "0 6 * * 1"   # Mondays 06:00 UTC
   workflow_dispatch:       # lets you run it by hand from the Actions tab
+    inputs:
+      backfill:
+        description: "Backfill: ignore date windows and collect everything for this year"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -22,6 +27,7 @@ jobs:
         run: python collector.py
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          BACKFILL: ${{ inputs.backfill && '1' || '' }}
       - name: Commit data
         run: |
           git config user.name "quiz-bot"
