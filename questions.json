@@ -33,6 +33,56 @@
   ]
  },
  {
+  "id": "cycle-giro-2026",
+  "category": "Cycling",
+  "question": "Who won the 2026 Giro d'Italia men's general classification?",
+  "year": 2026,
+  "event": "cycle-giro",
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "Jonas Vingegaard (Visma–Lease a Bike), by 5 minutes 22 seconds",
+  "detail": "Vingegaard won the 2026 Giro d'Italia, finishing 5:22 ahead of Felix Gall (Decathlon CMA CGM), with Jai Hindley third at 6:25, and took five stage wins on the way to completing the Grand Tour set.",
+  "sources": [
+   "https://www.washingtonpost.com/sports/2026/05/31/giro-ditalia-vingegaard-champion-cycling/3fb94fa4-5d13-11f1-9c46-d6211372eede_story.html",
+   "https://www.cyclingnews.com/pro-cycling/racing/giro-d-italia-gc-standings-2026/",
+   "https://www.france24.com/en/sport/20260531-vingegaard-completes-grand-tour-set-with-victory-at-the-giro-d-italia",
+   "https://en.wikipedia.org/wiki/2026_Giro_d'Italia"
+  ]
+ },
+ {
+  "id": "cycle-tdf-2026",
+  "category": "Cycling",
+  "question": "Who won the 2026 Tour de France men's general classification?",
+  "year": 2026,
+  "event": "cycle-tdf",
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "Tadej Pogačar (UAE Team Emirates-XRG) won by 6 minutes 26 seconds over Remco Evenepoel.",
+  "detail": "Pogačar won his fifth Tour de France title in 73h 56' 26\", ahead of Remco Evenepoel (Red Bull-Bora-hansgrohe) by 6:26. Isaac del Toro, his UAE teammate, was third at 9:42.",
+  "sources": [
+   "https://sports.yahoo.com/articles/leading-tour-france-2026-stage-181738286.html",
+   "https://www.cyclingnews.com/pro-cycling/racing/tour-de-france-gc-standings-2026/",
+   "https://www.cyclingweekly.com/racing/who-is-leading-the-tour-de-france-2026",
+   "https://en.wikipedia.org/wiki/2026_Tour_de_France"
+  ]
+ },
+ {
+  "id": "cycle-vuelta-2026",
+  "category": "Cycling",
+  "question": "Who won the 2026 Vuelta a Espana men's general classification?",
+  "year": 2026,
+  "event": "cycle-vuelta",
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "Enric Mas (Movistar Team)",
+  "detail": "Mas won the 2026 Vuelta a España, finishing 2:15 ahead of runner-up Primož Roglič (Red Bull-Bora-Hansgrohe) and 2:44 ahead of third-placed Felix Gall, in a winning time of 73h 52' 55\".",
+  "sources": [
+   "https://www.cyclingnews.com/pro-cycling/racing/vuelta-a-espana-gc-standings-from-yellow-to-red-tadej-pogacar-takes-leaders-jersey-on-opening-day/",
+   "https://en.wikipedia.org/wiki/2026_Vuelta_a_Espa%C3%B1a",
+   "https://www.olympics.com/en/news/vuelta-espana-2026-schedule-stage-results-general-classification-standings"
+  ]
+ },
+ {
   "id": "fb-facup-2026",
   "category": "Football",
   "question": "Who won the 2026 FA Cup final?",
@@ -48,6 +98,22 @@
   ]
  },
  {
+  "id": "fb-leaguecup-2025",
+  "category": "Football",
+  "question": "Who won the Scottish League Cup (Premier Sports Cup) final played in 2025?",
+  "year": 2025,
+  "event": "fb-leaguecup",
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "St Mirren beat Celtic 3–1",
+  "detail": "St Mirren won the Premier Sports Cup final 3–1 against Celtic at Hampden Park on 14 December 2025, their second League Cup win and their first in 12 years.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/2025_Scottish_League_Cup_final",
+   "https://spfl.co.uk/league/league-cup",
+   "https://spfl.co.uk/news/premier-sports-cup-final-202526"
+  ]
+ },
+ {
   "id": "fb-pl-2026",
   "category": "Football",
   "question": "Who won the Premier League title in the season that ended in 2026?",
@@ -60,6 +126,37 @@
    "https://www.premierleague.com/en/news/4662306/arsenal-win-2025-26-premier-league-title-ending-22-year-wait-to-be-crowned-champions-again",
    "https://www.arsenal.com/news/arsenal-crowned-202526-premier-league-champions",
    "https://en.wikipedia.org/wiki/2025%E2%80%9326_Premier_League"
+  ]
+ },
+ {
+  "id": "fb-scottishcup-2026",
+  "category": "Football",
+  "question": "Who won the 2026 Scottish Cup final?",
+  "year": 2026,
+  "event": "fb-scottishcup",
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "Celtic beat Dunfermline Athletic 3-1",
+  "detail": "Celtic beat Dunfermline Athletic 3-1 at Hampden Park, Glasgow on 23 May 2026, which completed the domestic double.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/2026_Scottish_Cup_final",
+   "https://www.scottishfa.co.uk/en/scottish-cup/scottish-gas-mens-scottish-cup",
+   "https://www.tntsports.co.uk/football/scottish-cup/calendar-results.shtml"
+  ]
+ },
+ {
+  "id": "fb-spfl-2026",
+  "category": "Football",
+  "question": "Who won the Scottish Premiership title in the season that ended in 2026?",
+  "year": 2026,
+  "event": "fb-spfl",
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "Celtic",
+  "detail": "Celtic clinched the 2025–26 Scottish Premiership on 16 May 2026 with a 3–1 final-day home win over Hearts, their fifth consecutive title and 56th Scottish league title overall.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/2025%E2%80%9326_Scottish_Premiership",
+   "https://www.outlookindia.com/sports/football/celtic-vs-hearts-scottish-premiership-2025-26-title-victory-in-pics"
   ]
  },
  {
@@ -219,6 +316,55 @@
   ]
  },
  {
+  "id": "race-grandnational-2026",
+  "category": "Horse racing",
+  "question": "Which horse won the 2026 Grand National at Aintree?",
+  "year": 2026,
+  "event": "race-grandnational",
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "I Am Maximus, ridden by Paul Townend and trained by Willie Mullins",
+  "detail": "I Am Maximus, the 9/2 favourite, won the Grand National at Aintree on 11 April 2026. It was his second win after 2024, and he was owned by J. P. McManus (per Wikipedia) or Claudio Michael Grech (per ESPN).",
+  "sources": [
+   "https://www.espn.co.uk/horse-racing/story/_/id/48456935/grand-national-2026-result-maximus-regains-title-makes-horse-racing-history-aintree",
+   "https://en.wikipedia.org/wiki/2026_Grand_National",
+   "https://en.wikipedia.org/wiki/I_Am_Maximus"
+  ]
+ },
+ {
+  "id": "rugby-sixnations-2026",
+  "category": "Rugby",
+  "question": "Who won the 2026 men's Six Nations?",
+  "year": 2026,
+  "event": "rugby-sixnations",
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "France won the 2026 men's Six Nations. It was neither a Grand Slam nor a Triple Crown for France. Wales finished last and took the Wooden Spoon.",
+  "detail": "France secured a second straight title when Thomas Ramos kicked a last-kick penalty to beat England 48-46, finishing two table points ahead of Ireland. Ireland won the Triple Crown, no team won the Grand Slam, and Wales finished last for the third year running.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/2026_Six_Nations_Championship",
+   "https://www.rugbyworld.com/tournaments/rugby-six-nations/six-nations-all-you-need-to-know-171091",
+   "https://www.rugbyworld.com/tournaments/rugby-six-nations/who-has-won-the-six-nations-172815"
+  ]
+ },
+ {
+  "id": "snooker-worlds-2026",
+  "category": "Snooker",
+  "question": "Who won the 2026 World Snooker Championship at the Crucible?",
+  "year": 2026,
+  "event": "snooker-worlds",
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "Wu Yize won the 2026 World Snooker Championship, beating Shaun Murphy 18-17 in the final.",
+  "detail": "Wu Yize, 22, of China beat runner-up Shaun Murphy 18-17 in a final-frame decider at the Crucible on 4 May 2026. It was the first world final to go to a deciding frame since 2002.",
+  "sources": [
+   "https://www.skysports.com/more-sports/snooker/news/12243/13540204/wu-yize-wins-2026-world-snooker-championship-as-he-beats-shaun-murphy-in-final-frame-epic-at-crucible",
+   "https://en.wikipedia.org/wiki/2026_World_Snooker_Championship",
+   "https://www.espn.com/snooker/story/_/id/48666142/world-snooker-championship-2026-final-shaun-murphy-wu-yize-latest-updates-commentary-score-result-day-one-day-two",
+   "https://snookerhq.com/2026/05/05/wu-yize-world-snooker-champion-2026/"
+  ]
+ },
+ {
   "id": "tennis-ao-m-2026",
   "category": "Tennis",
   "question": "Who won the 2026 Australian Open men's singles?",
@@ -343,6 +489,123 @@
   ]
  },
  {
+  "id": "tv-apprentice-2026",
+  "category": "UK TV",
+  "question": "Who won the 2026 series of The Apprentice UK (BBC)?",
+  "year": 2026,
+  "event": "tv-apprentice",
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "Karishma Vijay, founder of the skincare-infused cosmetics brand Kishkin",
+  "detail": "Vijay won Series 20 of The Apprentice UK in the final on 16 April 2026, beating runner-up Pascha Myhill, and received Lord Sugar's £250,000 investment in her beauty brand Kishkin.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/The_Apprentice_(British_TV_series)_series_20",
+   "https://www.globalindian.com/youth/from-basement-startup-to-lord-sugars-backing-karishma-vijay-wins-season-20-of-the-apprentice/",
+   "https://newswav.com/article/the-apprentice-winner-secures-lord-sugar-s-250-000-investment-for-beauty-bu-A2604_fzFr3q",
+   "https://businesscloud.co.uk/news/lord-sugar-defends-stressed-apprentice-winner-karishma/"
+  ]
+ },
+ {
+  "id": "tv-bgt-2026",
+  "category": "UK TV",
+  "question": "Who won the 2026 series of Britain's Got Talent (ITV)?",
+  "year": 2026,
+  "event": "tv-bgt",
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "The Hawkstone Farmers Choir",
+  "detail": "A choir of farmers, the first choir ever to win Britain's Got Talent, was crowned winner of series 19 in the live final on 30 May 2026, ahead of runner-up Celestial, a drone display group.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Britain's_Got_Talent_series_19",
+   "https://www.tvguide.co.uk/articles/winner-britains-got-talent-announced/",
+   "https://www.theasianaffairs.com/britains-got-talent-2026-winner-full-final-results-rankings/"
+  ]
+ },
+ {
+  "id": "tv-celebtraitors-2025",
+  "category": "UK TV",
+  "question": "Who won the 2025 series of Celebrity Traitors UK (BBC)?",
+  "year": 2025,
+  "event": "tv-celebtraitors",
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "Alan Carr",
+  "detail": "Alan Carr won the first series of The Celebrity Traitors (finale 6 November 2025) as the last remaining Traitor, taking £87,500 for the charity Neuroblastoma UK.",
+  "sources": [
+   "https://uk.news.yahoo.com/celebrity-traitors-crowns-winner-tense-222330696.html",
+   "https://en.wikipedia.org/wiki/The_Celebrity_Traitors_series_1",
+   "https://www.edinburghnews.scotsman.com/whats-on/celebrity-traitors-bbc-final-recap-who-won-5392162"
+  ]
+ },
+ {
+  "id": "tv-imaceleb-2025",
+  "category": "UK TV",
+  "question": "Who won the 2025 series of I'm a Celebrity... Get Me Out of Here! (UK, ITV)?",
+  "year": 2025,
+  "event": "tv-imaceleb",
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "Angryginge (Angry Ginge, real name Morgan Burtwistle) won as King of the Jungle. Tom Read Wilson was runner-up (2nd) and Shona McGarty finished 3rd.",
+  "detail": "Angryginge won the 7 December 2025 final with about 53% of roughly 13 million votes, ahead of Tom Read Wilson (25%) and Shona McGarty (22%).",
+  "sources": [
+   "https://uk.news.yahoo.com/live/im-a-celebrity-final-2025-live-winner-shona-ginge-tom-203941855.html",
+   "https://www.aol.com/articles/m-celebrity-2025-winner-crowned-223835573.html",
+   "https://www.hellomagazine.com/film/871608/im-a-celebrity-crowns-angryginge-as-2025-king-of-the-jungle/",
+   "https://www.capitalfm.com/news/tv-film/im-a-celebrity/2025-who-won-angry-ginge/"
+  ]
+ },
+ {
+  "id": "tv-loveisland-2026",
+  "category": "UK TV",
+  "question": "Who won the 2026 summer series of Love Island UK (ITV2)?",
+  "year": 2026,
+  "event": "tv-loveisland",
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "Winners: Julia Majchrzak & Lorenzo Alessi. Runners-up: Jasmine Müller & Kavan Murphy.",
+  "detail": "Julia and Lorenzo won the Love Island UK series 13 final on 27 July 2026 and shared the £50,000 prize. Jasmine and Kavan came second, and Angelista Gunda and Simba Kudyiwa came third.",
+  "sources": [
+   "https://www.rte.ie/entertainment/2026/0728/1585377-love-island-crowns-2026-winners/",
+   "https://www.irishexaminer.com/lifestyle/artsandculture/arid-41886976.html",
+   "https://en.wikipedia.org/wiki/Love_Island_(2015_TV_series)_series_13",
+   "https://www.capitalxtra.com/news/love-island-2026-winners-final-voting-figures/"
+  ]
+ },
+ {
+  "id": "tv-strictly-2025",
+  "category": "UK TV",
+  "question": "Who won the 2025 series of Strictly Come Dancing (BBC)?",
+  "year": 2025,
+  "event": "tv-strictly",
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "Karen Carney and her professional partner Carlos Gu won Strictly Come Dancing 2025. The runners-up were George Clarke with Alexis Warr, and Amber Davies with Nikita Kuzmin.",
+  "detail": "Karen Carney, the former England footballer, and Carlos Gu were crowned champions in the final on 20 December 2025 on BBC One, beating YouTuber George Clarke (partnered with Alexis Warr) and Love Island's Amber Davies (partnered with Nikita Kuzmin).",
+  "sources": [
+   "https://www.aol.com/articles/strictly-come-dancing-announces-winner-210957474.html",
+   "https://www.newhamrecorder.co.uk/news/national/uk-today/25714652.x-named-winner-strictly-come-dancing-2025/",
+   "https://en.wikipedia.org/wiki/Strictly_Come_Dancing_series_23",
+   "https://theukdaily.uk/world/strictly-come-dancing-2025-contestants/"
+  ]
+ },
+ {
+  "id": "tv-traitors-2026",
+  "category": "UK TV",
+  "question": "Who won the 2026 series of The Traitors UK (BBC, civilian version)?",
+  "year": 2026,
+  "event": "tv-traitors",
+  "checked": "2026-10-04",
+  "status": "verified",
+  "answer": "Rachel Duffy and Stephen Libby (both Traitors) won series 4 of The Traitors UK, splitting a £95,750 prize pot (£47,875 each).",
+  "detail": "The series 4 final aired on BBC One on 23 January 2026, when Traitors Rachel Duffy and Stephen Libby stayed loyal to each other and became the first pair of Traitors to win together, beating runner-up Jack Butler; one AOL report says £97,750, but Yahoo and Hello! give £95,750, which matches the £47,875 each.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/The_Traitors_(British_TV_series)_series_4",
+   "https://uk.news.yahoo.com/the-traitors-winners-claudia-winkleman-094942565.html",
+   "https://www.hellomagazine.com/film/880071/the-traitors-winner-hasnt-been-paid-prize-money/",
+   "https://www.aol.com/articles/two-traitors-history-nail-biting-221843887.html"
+  ]
+ },
+ {
   "id": "uk-abc",
   "category": "UK posts",
   "question": "Who is the current Archbishop of Canterbury?",
@@ -353,7 +616,7 @@
   "detail": "Dame Sarah Mullally became the 106th Archbishop of Canterbury and the first woman in the role. Her election was confirmed on 28 January 2026 and she was installed at Canterbury Cathedral on 25 March 2026.",
   "sources": [
    "https://www.archbishopofcanterbury.org/node/32/bishop-sarah-mullally-be-confirmed-archbishop-canterbury",
-   "https://episcopalnewsservice.org/2026/03/25/anglican-leaders-gather-for-installation-of-archbishop-of-canterbury-sarah-mullally/",
+   "https://episcopalnewsservice.org/2026/01/28/sarah-mullally-confirmed-as-106th-archbishop-of-canterbury/",
    "https://www.npr.org/2026/03/25/nx-s1-5753707/archbishop-canterbury-church-england-sarah-mullally"
   ]
  },
@@ -367,9 +630,9 @@
   "answer": "John Healey",
   "detail": "John Healey has been Chancellor of the Exchequer since 20 July 2026, when new Prime Minister Andy Burnham appointed him to replace Rachel Reeves.",
   "sources": [
-   "https://www.cityam.com/john-healey-becomes-chancellor-as-andy-burnham-names-top-cabinet-appointments/",
-   "https://www.irishtimes.com/business/2026/07/21/who-is-britains-new-chancellor-john-healey/",
    "https://www.moneymarketing.co.uk/news/burnham-appoints-john-healey-as-new-chancellor/",
+   "https://solicitornews.co.uk/john-healey-chancellor-ministerial-reshuffle/",
+   "https://www.gbnews.com/money/andy-burnham-john-healey-chancellor",
    "https://en.wikipedia.org/wiki/Chancellor_of_the_Exchequer"
   ]
  },
