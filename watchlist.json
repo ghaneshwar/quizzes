@@ -24,6 +24,8 @@
 {"id":"uk-chancellor","cat":"UK posts","q":"Who is the current UK Chancellor of the Exchequer?"},
 {"id":"awards-booker","cat":"Awards","q":"Who won the {year} Booker Prize?","months":[11,12]},
 {"id":"awards-turner","cat":"Awards","q":"Who won the {year} Turner Prize?","months":[12]},
+{"id":"awards-mercury","cat":"Awards","q":"Who won the {year} Mercury Music Prize?","months":[10,11]},
+{"id":"awards-eurovision","cat":"Awards","q":"Who won the {year} Eurovision Song Content?","months":[6,7]},
 {"id":"tv-imaceleb","cat":"UK TV","q":"Who won the {year} series of I'm a Celebrity... Get Me Out of Here! (UK, ITV)?","hint":"Name the winner (King or Queen of the Jungle) and the runners-up.","months":[11,12]},
 {"id":"tv-strictly","cat":"UK TV","q":"Who won the {year} series of Strictly Come Dancing (BBC)?","hint":"Name the celebrity and their professional partner, and the runners-up.","months":[12]},
 {"id":"tv-traitors","cat":"UK TV","q":"Who won the {year} series of The Traitors UK (BBC, civilian version)?","hint":"Name all the winners and the prize money. This is not the celebrity edition.","months":[1,2]},
