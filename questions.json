@@ -610,14 +610,14 @@
   "category": "UK posts",
   "question": "Who is the current Archbishop of Canterbury?",
   "year": 2026,
-  "checked": "2026-10-04",
+  "checked": "2026-10-07",
   "status": "verified",
   "answer": "Sarah Mullally",
   "detail": "Dame Sarah Mullally became the 106th Archbishop of Canterbury and the first woman in the role. Her election was confirmed on 28 January 2026 and she was installed at Canterbury Cathedral on 25 March 2026.",
   "sources": [
    "https://www.archbishopofcanterbury.org/node/32/bishop-sarah-mullally-be-confirmed-archbishop-canterbury",
-   "https://episcopalnewsservice.org/2026/01/28/sarah-mullally-confirmed-as-106th-archbishop-of-canterbury/",
-   "https://www.npr.org/2026/03/25/nx-s1-5753707/archbishop-canterbury-church-england-sarah-mullally"
+   "https://www.npr.org/2026/03/25/nx-s1-5753707/archbishop-canterbury-church-england-sarah-mullally",
+   "https://episcopalnewsservice.org/2026/01/28/sarah-mullally-confirmed-as-106th-archbishop-of-canterbury/"
   ]
  },
  {
@@ -625,15 +625,14 @@
   "category": "UK posts",
   "question": "Who is the current UK Chancellor of the Exchequer?",
   "year": 2026,
-  "checked": "2026-10-04",
+  "checked": "2026-10-07",
   "status": "verified",
   "answer": "John Healey",
   "detail": "John Healey has been Chancellor of the Exchequer since 20 July 2026, when new Prime Minister Andy Burnham appointed him to replace Rachel Reeves.",
   "sources": [
-   "https://www.moneymarketing.co.uk/news/burnham-appoints-john-healey-as-new-chancellor/",
-   "https://solicitornews.co.uk/john-healey-chancellor-ministerial-reshuffle/",
-   "https://www.gbnews.com/money/andy-burnham-john-healey-chancellor",
-   "https://en.wikipedia.org/wiki/Chancellor_of_the_Exchequer"
+   "https://en.wikipedia.org/wiki/Chancellor_of_the_Exchequer",
+   "https://theconversation.com/john-healey-is-the-uks-chancellor-what-burnhams-surprise-pick-says-about-his-style-of-government-287896",
+   "https://simple.wikipedia.org/wiki/Chancellor_of_the_Exchequer"
   ]
  },
  {
@@ -641,15 +640,15 @@
   "category": "UK posts",
   "question": "Who is the current Prime Minister of the United Kingdom, and when did they take office?",
   "year": 2026,
-  "checked": "2026-10-04",
+  "checked": "2026-10-07",
   "status": "verified",
   "answer": "Andy Burnham, who took office on 20 July 2026",
   "detail": "Burnham became Prime Minister on 20 July 2026 after meeting King Charles III. He replaced Keir Starmer, who had agreed to step down, and is the 59th person to hold the office.",
   "sources": [
-   "https://www.gov.uk/government/ministers/prime-minister",
-   "https://www.nbcnews.com/world/united-kingdom/andy-burnham-british-prime-minister-keir-starmer-labour-king-charles-rcna588324",
-   "https://www.cfr.org/articles/andy-burnham-what-to-expect-from-the-uks-new-prime-minister",
-   "https://en.wikipedia.org/wiki/Prime_Minister_of_the_United_Kingdom"
+   "https://abcnews.com/International/andy-burnham-become-uks-prime-minister-after-meeting/story?id=134907835",
+   "https://www.cbsnews.com/news/andy-burnham-new-uk-prime-minister-7th-in-decade-after-keir-starmer/",
+   "https://fortune.com/2026/07/20/andy-burnham-uk-prime-minister-labour/",
+   "https://en.wikipedia.org/wiki/Premiership_of_Andy_Burnham"
   ]
  }
 ]
