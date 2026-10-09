@@ -33,6 +33,23 @@
   ]
  },
  {
+  "id": "awards-eurovision-2026",
+  "category": "Awards",
+  "question": "Who won the 2026 Eurovision Song Content?",
+  "year": 2026,
+  "event": "awards-eurovision",
+  "checked": "2026-10-09",
+  "status": "verified",
+  "answer": "Bulgaria (Dara, \"Bangaranga\")",
+  "detail": "Dara won the 70th Eurovision Song Contest final in Vienna on 16 May 2026 with 516 points, ahead of Israel's Noam Bettan with 343, and it was Bulgaria's first Eurovision win.",
+  "sources": [
+   "https://www.euronews.com/culture/2026/05/17/eurovision-2026-follow-our-coverage-of-the-worlds-greatest-song-contest",
+   "https://eurovisionworld.com/esc/bulgaria-wins-the-eurovision-song-contest-2026",
+   "https://www.britannica.com/art/Eurovision-Song-Contest",
+   "https://en.wikipedia.org/wiki/Eurovision_Song_Contest_2026"
+  ]
+ },
+ {
   "id": "awards-mercury-2025",
   "category": "Awards",
   "question": "Who won the 2025 Mercury Music Prize?",
@@ -679,10 +696,10 @@
   "answer": "Andy Burnham, who took office on 20 July 2026",
   "detail": "Burnham became Prime Minister on 20 July 2026 after meeting King Charles III. He replaced Keir Starmer, who had agreed to step down, and is the 59th person to hold the office.",
   "sources": [
-   "https://www.gov.uk/government/people/andy-burnham",
-   "https://www.gov.uk/government/ministers/prime-minister",
-   "https://sfs.georgetown.edu/news/five-questions-about-new-uk-prime-minister-andy-burnham/",
-   "https://en.wikipedia.org/wiki/Prime_Minister_of_the_United_Kingdom"
+   "https://www.nbcnews.com/world/united-kingdom/andy-burnham-british-prime-minister-keir-starmer-labour-king-charles-rcna588324",
+   "https://royalcentral.co.uk/royal-news/the-king-appoints-andy-burnham-as-the-fourth-prime-minister-of-his-reign-218515/",
+   "https://en.wikipedia.org/wiki/Andy_Burnham",
+   "https://www.politics.co.uk/2026/08/andy-burnham-appoints-new-cabinet-whos-in-and-whos-out/"
   ]
  }
 ]
