@@ -16,6 +16,40 @@
   ]
  },
  {
+  "id": "awards-eurovision-2025",
+  "category": "Awards",
+  "question": "Who won the 2025 Eurovision Song Content?",
+  "year": 2025,
+  "event": "awards-eurovision",
+  "checked": "2026-10-09",
+  "status": "verified",
+  "answer": "Austria – JJ (Johannes Pietsch) with \"Wasted Love\"",
+  "detail": "JJ won the 69th Eurovision Song Contest final in Basel, Switzerland, on 17 May 2025 with 436 points, ahead of Israel (357) and Estonia (356).",
+  "sources": [
+   "https://www.eurovision.com/stories/austrias-jj-wins-the-eurovision-song-contest-2025/",
+   "https://au.variety.com/2025/music/news/austria-2025-eurovision-song-contest-jj-wasted-love-22720",
+   "https://www.euronews.com/culture/2025/05/17/controversy-drama-and-dazzle-join-us-live-for-the-eurovision-2025-grand-final-in-switzerla",
+   "https://en.wikipedia.org/wiki/Eurovision_Song_Contest_2025"
+  ]
+ },
+ {
+  "id": "awards-mercury-2025",
+  "category": "Awards",
+  "question": "Who won the 2025 Mercury Music Prize?",
+  "year": 2025,
+  "event": "awards-mercury",
+  "checked": "2026-10-09",
+  "status": "verified",
+  "answer": "Sam Fender",
+  "detail": "Sam Fender won the 2025 Mercury Prize for his third album 'People Watching' at a ceremony at the Utilita Arena in Newcastle on 16 October 2025.",
+  "sources": [
+   "https://www.nme.com/news/music/sam-fender-wins-mercury-prize-2025-for-people-watching-3899105",
+   "https://www.billboard.com/music/awards/mercury-prize-2025-sam-fender-wins-people-watching-1236090780/",
+   "https://www.mercuryprize.com/photos",
+   "https://www.itv.com/news/tyne-tees/2025-10-16/sam-fender-crowned-winner-of-mercury-prize-2025-for-album-people-watching"
+  ]
+ },
+ {
   "id": "awards-turner-2025",
   "category": "Awards",
   "question": "Who won the 2025 Turner Prize?",
@@ -610,7 +644,7 @@
   "category": "UK posts",
   "question": "Who is the current Archbishop of Canterbury?",
   "year": 2026,
-  "checked": "2026-10-07",
+  "checked": "2026-10-09",
   "status": "verified",
   "answer": "Sarah Mullally",
   "detail": "Dame Sarah Mullally became the 106th Archbishop of Canterbury and the first woman in the role. Her election was confirmed on 28 January 2026 and she was installed at Canterbury Cathedral on 25 March 2026.",
@@ -625,14 +659,14 @@
   "category": "UK posts",
   "question": "Who is the current UK Chancellor of the Exchequer?",
   "year": 2026,
-  "checked": "2026-10-07",
+  "checked": "2026-10-09",
   "status": "verified",
   "answer": "John Healey",
   "detail": "John Healey has been Chancellor of the Exchequer since 20 July 2026, when new Prime Minister Andy Burnham appointed him to replace Rachel Reeves.",
   "sources": [
-   "https://en.wikipedia.org/wiki/Chancellor_of_the_Exchequer",
+   "https://en.wikipedia.org/wiki/John_Healey",
    "https://theconversation.com/john-healey-is-the-uks-chancellor-what-burnhams-surprise-pick-says-about-his-style-of-government-287896",
-   "https://simple.wikipedia.org/wiki/Chancellor_of_the_Exchequer"
+   "https://en.wikipedia.org/wiki/Chancellor_of_the_Exchequer"
   ]
  },
  {
@@ -640,15 +674,15 @@
   "category": "UK posts",
   "question": "Who is the current Prime Minister of the United Kingdom, and when did they take office?",
   "year": 2026,
-  "checked": "2026-10-07",
+  "checked": "2026-10-09",
   "status": "verified",
   "answer": "Andy Burnham, who took office on 20 July 2026",
   "detail": "Burnham became Prime Minister on 20 July 2026 after meeting King Charles III. He replaced Keir Starmer, who had agreed to step down, and is the 59th person to hold the office.",
   "sources": [
-   "https://abcnews.com/International/andy-burnham-become-uks-prime-minister-after-meeting/story?id=134907835",
-   "https://www.cbsnews.com/news/andy-burnham-new-uk-prime-minister-7th-in-decade-after-keir-starmer/",
-   "https://fortune.com/2026/07/20/andy-burnham-uk-prime-minister-labour/",
-   "https://en.wikipedia.org/wiki/Premiership_of_Andy_Burnham"
+   "https://www.gov.uk/government/people/andy-burnham",
+   "https://www.gov.uk/government/ministers/prime-minister",
+   "https://sfs.georgetown.edu/news/five-questions-about-new-uk-prime-minister-andy-burnham/",
+   "https://en.wikipedia.org/wiki/Prime_Minister_of_the_United_Kingdom"
   ]
  }
 ]
