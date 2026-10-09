@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Topical Pub Quiz</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap">
+<style>
+:root{--bg:#f6f7f4;--card:#fff;--ink:#17201b;--mute:#5d6b62;--line:#d5dbd3;--acc:#14532d;--accInk:#fff;--gold:#b7791f;--bad:#9b2c2c;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141b17;--card:#1f2a24;--ink:#eef3ec;--mute:#9db0a3;--line:#33443a;--acc:#6fcf97;--accInk:#0c1a12;--gold:#e5b455;--bad:#f08a8a}}
+:root[data-theme="dark"]{--bg:#141b17;--card:#1f2a24;--ink:#eef3ec;--mute:#9db0a3;--line:#33443a;--acc:#6fcf97;--accInk:#0c1a12;--gold:#e5b455;--bad:#f08a8a}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.45}
+main{max-width:640px;margin:0 auto;padding:18px 16px 40px}
+h1{font-size:1.5rem;font-weight:800;margin:0 0 2px}
+.sub{color:var(--mute);margin:0 0 14px;font-size:.92rem}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.chip{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:6px 12px;font:inherit;font-size:.85rem;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--acc);color:var(--accInk);border-color:var(--acc)}
+.bar{display:flex;justify-content:space-between;align-items:center;color:var(--mute);font-size:.88rem;margin:6px 0 10px;gap:8px;flex-wrap:wrap}
+.tools button{background:none;border:0;color:var(--acc);padding:4px 6px;font:inherit;font-weight:600;cursor:pointer}
+.tools button[aria-pressed=true]{text-decoration:underline}
+.card{width:100%;min-height:290px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 20px;cursor:pointer;display:flex;flex-direction:column;justify-content:space-between;gap:16px}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.cat{font-size:.8rem;color:var(--gold);font-weight:600}
+.q{font-size:1.4rem;font-weight:600;line-height:1.25;margin:0}
+.a{font-size:1.7rem;font-weight:800;color:var(--acc);margin:0;line-height:1.15}
+.d{margin:8px 0 0;font-size:.98rem}
+.foot{font-size:.8rem;color:var(--mute)}
+.foot a{color:var(--mute)}
+.hint{color:var(--mute);font-size:.85rem}
+.score{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.score button{font:inherit;padding:13px;border-radius:10px;border:1px solid var(--line);background:var(--card);font-weight:600;cursor:pointer}
+.got{border-color:var(--acc)!important;color:var(--acc)}
+.miss{border-color:var(--bad)!important;color:var(--bad)}
+.nav{display:flex;justify-content:space-between;margin-top:10px}
+.nav button{background:none;border:0;color:var(--mute);padding:8px 4px;font:inherit;cursor:pointer}
+.empty{padding:30px 10px;color:var(--mute);text-align:center}
+</style>
+</head>
+<body>
+<main>
+<h1>Topical pub quiz</h1>
+<p class="sub" id="sub">Loading latest answers…</p>
+<div class="chips" id="chips" role="group" aria-label="Categories"></div>
+<div class="bar"><span id="count"></span><span class="tools"><button id="shuf">Shuffle</button><button id="mo" aria-pressed="false">Missed only</button><button id="rs">Reset score</button></span></div>
+<div id="stage"></div>
+</main>
+<script>
+// Data is read from the repository's questions.json (kept fresh by the collector).
+// If you rename the repo or branch, change the first address.
+var DATA_URLS=["https://raw.githubusercontent.com/ghaneshwar/quizzes/main/questions.json","questions.json"];
+var all=[],cat="All",missedOnly=false,deck=[],i=0,shown=false,st={};
+try{st=JSON.parse(localStorage.getItem("pq-live")||"{}")}catch(e){st={}}
+function save(){try{localStorage.setItem("pq-live",JSON.stringify(st))}catch(e){}}
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function load(n){
+  if(n>=DATA_URLS.length)return Promise.reject(new Error("no data"));
+  return fetch(DATA_URLS[n],{cache:"no-store"}).then(function(r){if(!r.ok)throw 0;return r.json()}).catch(function(){return load(n+1)});
+}
+function latest(rows){
+  // keep verified records only, and the most recent year for each event
+  var best={};
+  rows.forEach(function(r){
+    if(r.status!=="verified"||!r.answer)return;
+    var ev=r.event||String(r.id).replace(/-\d{4}$/,"");
+    if(!best[ev]||(r.year||0)>(best[ev].year||0))best[ev]=r;
+  });
+  return Object.keys(best).map(function(k){return best[k]});
+}
+load(0).then(function(rows){
+  all=latest(rows);
+  var d=rows.map(function(r){return r.checked||""}).sort().pop();
+  document.getElementById("sub").textContent=all.length+" verified answers"+(d?" · last checked "+d:"");
+  chips();build();
+}).catch(function(){
+  document.getElementById("sub").textContent="";
+  document.getElementById("stage").innerHTML='<div class="empty">Could not load the answers. If you opened this file directly from your PC, use the hosted site instead.</div>';
+});
+function cats(){var c=["All"];all.forEach(function(r){if(c.indexOf(r.category)<0)c.push(r.category)});return c}
+function chips(){
+  var c=document.getElementById("chips");c.innerHTML="";
+  cats().forEach(function(n){var b=document.createElement("button");b.className="chip";b.textContent=n;b.setAttribute("aria-pressed",n===cat);b.onclick=function(){cat=n;chips();build()};c.appendChild(b)});
+}
+function build(){
+  deck=all.filter(function(r){return (cat==="All"||r.category===cat)&&(!missedOnly||st[r.id]==="m")});
+  deck.sort(function(a,b){return (a.category+a.question).localeCompare(b.category+b.question)});
+  i=0;shown=false;render();
+}
+function shuffle(){for(var k=deck.length-1;k>0;k--){var j=Math.floor(Math.random()*(k+1));var t=deck[k];deck[k]=deck[j];deck[j]=t}i=0;shown=false;render()}
+function links(r){
+  return (r.sources||[]).slice(0,3).map(function(u){
+    if(!/^https?:\/\//.test(u))return "";
+    var h;try{h=new URL(u).hostname.replace(/^www\./,"")}catch(e){return ""}
+    return '<a href="'+esc(u)+'" target="_blank" rel="noopener">'+esc(h)+'</a>';
+  }).filter(Boolean).join(" · ");
+}
+function render(){
+  var s=document.getElementById("stage"),n=deck.length,got=0,mis=0;
+  all.forEach(function(r){if(st[r.id]==="g")got++;if(st[r.id]==="m")mis++});
+  document.getElementById("count").textContent=n?("Card "+(i+1)+" of "+n+" · "+got+" got, "+mis+" missed"):"No cards";
+  if(!n){s.innerHTML='<div class="empty">'+(missedOnly?"Nothing missed yet. Switch off Missed only.":"No cards in this category yet.")+'</div>';return}
+  var r=deck[i];
+  var h='<div class="card" id="card" role="button" tabindex="0" aria-live="polite"><span class="cat">'+esc(r.category)+'</span><span>';
+  if(!shown)h+='<p class="q">'+esc(r.question)+'</p><span class="hint">Tap to reveal</span>';
+  else h+='<p class="a">'+esc(r.answer)+'</p>'+(r.detail?'<p class="d">'+esc(r.detail)+'</p>':'');
+  h+='</span><span class="foot">'+(shown?(links(r)+(r.checked?' · checked '+esc(r.checked):'')):'')+'</span></div>';
+  h+='<div class="score"><button class="miss" id="bm">Missed it</button><button class="got" id="bg">Got it</button></div>';
+  h+='<div class="nav"><button id="pv">Previous</button><button id="nx">Next</button></div>';
+  s.innerHTML=h;
+  var c=document.getElementById("card");
+  c.onclick=function(e){if(e.target.tagName==="A")return;shown=!shown;render();document.getElementById("card").focus()};
+  c.onkeydown=function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();c.click()}};
+  document.getElementById("bm").onclick=function(){mark("m")};
+  document.getElementById("bg").onclick=function(){mark("g")};
+  document.getElementById("pv").onclick=function(){go(-1)};
+  document.getElementById("nx").onclick=function(){go(1)};
+}
+function mark(v){st[deck[i].id]=v;save();go(1)}
+function go(d){if(!deck.length)return;i=(i+d+deck.length)%deck.length;shown=false;render()}
+document.getElementById("shuf").onclick=shuffle;
+document.getElementById("mo").onclick=function(){missedOnly=!missedOnly;this.setAttribute("aria-pressed",missedOnly);build()};
+document.getElementById("rs").onclick=function(){st={};save();build()};
+document.addEventListener("keydown",function(e){if(e.target.tagName==="BUTTON"||e.target.id==="card")return;if(e.key==="ArrowRight")go(1);else if(e.key==="ArrowLeft")go(-1)});
+</script>
+</body>
+</html>
