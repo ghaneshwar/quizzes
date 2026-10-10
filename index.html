@@ -76,7 +76,7 @@ load(0).then(function(rows){
   chips();build();
 }).catch(function(){
   document.getElementById("sub").textContent="";
-  document.getElementById("stage").innerHTML='<div class="empty">Could not load the answers. If you opened this file directly from your PC, use the hosted site instead.</div>';
+  document.getElementById("stage").innerHTML='<div class="empty">Could not load the answers. If you opened this file directly from your workstation, use the hosted site instead.</div>';
 });
 function cats(){var c=["All"];all.forEach(function(r){if(c.indexOf(r.category)<0)c.push(r.category)});return c}
 function chips(){
