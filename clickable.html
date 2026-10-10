@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Clickable quiz</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap">
+<style>
+:root{--bg:#f6f7f4;--card:#fff;--ink:#17201b;--mute:#5d6b62;--line:#d5dbd3;--acc:#14532d;--accInk:#fff;--okBg:#cdeed8;--okLn:#1f7a45;--noBg:#f6cccc;--noLn:#b02a2a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141b17;--card:#1f2a24;--ink:#eef3ec;--mute:#9db0a3;--line:#33443a;--acc:#6fcf97;--accInk:#0c1a12;--okBg:#1d5232;--okLn:#6fcf97;--noBg:#5c2424;--noLn:#f08a8a}}
+:root[data-theme="dark"]{--bg:#141b17;--card:#1f2a24;--ink:#eef3ec;--mute:#9db0a3;--line:#33443a;--acc:#6fcf97;--accInk:#0c1a12;--okBg:#1d5232;--okLn:#6fcf97;--noBg:#5c2424;--noLn:#f08a8a}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.4}
+main{max-width:860px;margin:0 auto;padding:16px 14px 40px}
+h1{font-size:1.4rem;font-weight:800;margin:0 0 10px}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:6px}
+select,.btn{font:inherit;padding:8px 12px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;max-width:100%}
+.btn.pri{background:var(--acc);color:var(--accInk);border-color:var(--acc);font-weight:600}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{font:inherit;border:0;padding:8px 12px;background:var(--card);color:var(--ink);cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--acc);color:var(--accInk)}
+.seg button:disabled{opacity:.4;cursor:not-allowed}
+:focus-visible{outline:3px solid #b7791f;outline-offset:2px}
+.note{color:var(--mute);font-size:.88rem;margin:0 0 8px;min-height:1.2em}
+.hud{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);padding:8px 0;border-bottom:1px solid var(--line);margin-bottom:12px;z-index:2}
+.prompt{font-size:1.8rem;font-weight:800;margin:0}
+.meta{color:var(--mute);font-size:.9rem;display:flex;justify-content:space-between;margin-bottom:2px}
+.bar{height:5px;background:var(--line);border-radius:3px;margin-top:6px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--acc);width:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(125px,1fr));gap:8px}
+.cell{font:inherit;font-size:.92rem;padding:12px 6px;min-height:50px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;word-break:break-word}
+.cell:disabled{cursor:default}
+.cell.ok{background:var(--okBg);border-color:var(--okLn);font-weight:600}
+.cell.no{background:var(--noBg);border-color:var(--noLn)}
+.cell.miss{border:2px solid var(--noLn);color:var(--mute)}
+.end,.err{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;text-align:center}
+.end .big{font-size:2.8rem;font-weight:800;color:var(--acc);margin:0}
+.end p{margin:6px 0}
+.miss-list{color:var(--mute);font-size:.92rem;text-align:left;margin-top:12px}
+</style>
+</head>
+<body>
+<main>
+<h1>Clickable quiz</h1>
+<div class="row">
+<label for="set" style="position:absolute;left:-9999px">Subject</label>
+<select id="set"></select>
+<span class="seg" role="group" aria-label="Direction"><button id="d0" aria-pressed="true"></button><button id="d1" aria-pressed="false"></button></span>
+<button class="btn pri" id="go">Restart</button>
+</div>
+<p class="note" id="note"></p>
+<div class="hud"><div class="meta"><span id="prog"></span><span id="score"></span></div><p class="prompt" id="prompt"></p><div class="bar"><i id="fill"></i></div></div>
+<div id="grid" class="grid"></div>
+<div id="end"></div>
+</main>
+<script>
+// Subjects are listed in subjects/index.json; each entry points at its own file of pairs.
+var INDEX_URL="subjects/index.json";
+var $=function(id){return document.getElementById(id)};
+var SUB=[],S=null,dir=0,order,idx,score,locked,miss,cells,count,done;
+var sel=$("set");
+
+function fail(msg){
+  $("grid").innerHTML="";$("end").innerHTML='<div class="err">'+msg+'</div>';
+  $("prompt").textContent="";$("prog").textContent="";$("score").textContent="";$("fill").style.width="0";
+}
+function getJSON(u){return fetch(u,{cache:"no-cache"}).then(function(r){if(!r.ok)throw new Error(u);return r.json()})}
+
+getJSON(INDEX_URL).then(function(list){
+  SUB=list;
+  list.forEach(function(s){var o=document.createElement("option");o.textContent=s.title;sel.appendChild(o)});
+  var h=location.hash.slice(1);
+  for(var k=0;k<list.length;k++)if(list[k].id===h)sel.selectedIndex=k;
+  loadSubject();
+}).catch(function(){fail("Could not load the subject list. If you opened this file directly from your PC, use the hosted site instead.")});
+
+function loadSubject(){
+  var s=SUB[sel.selectedIndex];
+  try{history.replaceState(null,"","#"+s.id)}catch(e){}
+  getJSON(s.file).then(function(d){
+    if(!d.pairs||d.pairs.length<4)throw new Error("too few pairs");
+    S=d;setup();
+  }).catch(function(){fail("Could not load the data for this subject ("+s.file+").")});
+}
+function uniq(side){var seen={};return S.pairs.every(function(p){if(seen[p[side]])return false;seen[p[side]]=1;return true})}
+function setup(){
+  var can=[uniq(0),uniq(1)];
+  var oneWay=S.reversible===false;  // subject file says: only left -> right makes sense
+  if(oneWay)can[1]=false;
+  var b=[$("d0"),$("d1")],lab=[S.left+" → "+S.right,S.right+" → "+S.left],from=[S.left,S.right];
+  for(var k=0;k<2;k++){
+    b[k].textContent=lab[k];b[k].disabled=!can[k];
+    b[k].title=can[k]?"":(k===1&&oneWay?"Not reversible: one "+S.right.toLowerCase()+" can have several "+S.left.toLowerCase()+" entries":"Not available: some "+from[k].toLowerCase()+" values appear more than once");
+  }
+  if(!can[dir])dir=can[0]?0:1;
+  if(!can[0]&&!can[1])return fail("This subject has repeated values on both sides, so it can't be asked either way.");
+  $("note").textContent=S.note||"";
+  start();
+}
+function shuf(a){a=a.slice();for(var k=a.length-1;k>0;k--){var j=Math.floor(Math.random()*(k+1));var t=a[k];a[k]=a[j];a[j]=t}return a}
+function ansOf(q){return S.pairs[q][1-dir]}
+function start(){
+  $("d0").setAttribute("aria-pressed",dir===0);$("d1").setAttribute("aria-pressed",dir===1);
+  order=shuf(S.pairs.map(function(_,i){return i}));idx=0;score=0;locked=false;miss=[];cells={};count={};done={};
+  $("end").innerHTML="";
+  var g=$("grid");g.innerHTML="";
+  S.pairs.forEach(function(p){var v=p[1-dir];count[v]=(count[v]||0)+1});
+  Object.keys(count).sort(function(a,b){return a.localeCompare(b)}).forEach(function(v){
+    var b=document.createElement("button");b.className="cell";b.textContent=v;b.onclick=function(){pick(v,b)};g.appendChild(b);cells[v]=b;
+  });
+  show();
+}
+function show(){
+  var n=order.length;
+  $("prog").textContent="Question "+(idx+1)+" of "+n;
+  $("score").textContent="Score "+score+" / "+n;
+  $("fill").style.width=(idx/n*100)+"%";
+  $("prompt").textContent=S.pairs[order[idx]][dir]+"?";
+}
+function pick(v,b){
+  if(locked)return;
+  var q=order[idx],right=ansOf(q);locked=true;
+  if(v===right){
+    score++;done[v]=1;b.classList.add("ok");if(count[v]===1)b.disabled=true;
+    setTimeout(next,450);
+  }else{
+    var t=cells[right];
+    b.classList.add("no");t.classList.add("ok");miss.push(q);
+    setTimeout(function(){
+      b.classList.remove("no");
+      if(!done[right])t.classList.remove("ok");
+      if(count[right]===1){t.classList.add("miss");t.disabled=true}
+      next();
+    },1300);
+  }
+  $("score").textContent="Score "+score+" / "+order.length;
+}
+function next(){idx++;locked=false;if(idx>=order.length)return finish();show()}
+function finish(){
+  var n=order.length;
+  $("fill").style.width="100%";$("prompt").textContent="Finished";$("prog").textContent="Question "+n+" of "+n;
+  $("score").textContent="Score "+score+" / "+n;
+  function esc(s){return String(s).replace(/[&<>]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;"}[c]})}
+  var h='<div class="end"><p class="big">'+score+' / '+n+'</p><p>'+(score===n?"Perfect round.":(n-score)+" missed.")+'</p><button class="btn pri" id="again">Play again</button>';
+  if(miss.length)h+='<div class="miss-list"><b>Missed:</b> '+miss.map(function(q){return esc(S.pairs[q][0])+" – "+esc(S.pairs[q][1])}).join("; ")+'</div>';
+  $("end").innerHTML=h+'</div>';
+  $("again").onclick=start;$("again").focus();
+}
+sel.onchange=loadSubject;
+$("go").onclick=function(){if(S)start()};
+$("d0").onclick=function(){dir=0;if(S)start()};
+$("d1").onclick=function(){dir=1;if(S)start()};
+</script>
+</body>
+</html>

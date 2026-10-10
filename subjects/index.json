@@ -1,0 +1,6 @@
+[
+ {"id": "us-state-capitals", "title": "US State Capitals", "file": "subjects/us-state-capitals.json"},
+ {"id": "european-capitals", "title": "European Capitals", "file": "subjects/european-capitals.json"},
+ {"id": "car-makes-models", "title": "Car Makes and Models", "file": "subjects/car-makes-models.json"},
+ {"id": "rock-lead-singers", "title": "Lead Singers in Rock Bands", "file": "subjects/rock-lead-singers.json"}
+]
