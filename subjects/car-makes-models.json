@@ -3,6 +3,7 @@
  "left": "Model",
  "right": "Make",
  "reversible": false,
+ "defaultLength": 25,
  "note": "Which make builds this model? One-way: a make has several models.",
  "pairs": [
   ["Vantage", "Aston Martin"],
