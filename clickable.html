@@ -22,6 +22,9 @@ select,.btn{font:inherit;padding:8px 12px;border-radius:8px;border:1px solid var
 .seg button[aria-pressed=true]{background:var(--acc);color:var(--accInk)}
 .seg button:disabled{opacity:.4;cursor:not-allowed}
 :focus-visible{outline:3px solid #b7791f;outline-offset:2px}
+.len{display:flex;gap:10px;align-items:center;margin:0 0 6px;font-size:.9rem;color:var(--mute)}
+.len input{accent-color:var(--acc);width:min(260px,55vw)}
+.len output{min-width:8ch;color:var(--ink)}
 .note{color:var(--mute);font-size:.88rem;margin:0 0 8px;min-height:1.2em}
 .hud{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);padding:8px 0;border-bottom:1px solid var(--line);margin-bottom:12px;z-index:2}
 .prompt{font-size:1.8rem;font-weight:800;margin:0}
@@ -49,6 +52,7 @@ select,.btn{font:inherit;padding:8px 12px;border-radius:8px;border:1px solid var
 <span class="seg" role="group" aria-label="Direction"><button id="d0" aria-pressed="true"></button><button id="d1" aria-pressed="false"></button></span>
 <button class="btn pri" id="go">Restart</button>
 </div>
+<div class="len" id="lenrow"><label for="len">Questions</label><input type="range" id="len" min="10" max="50" value="50"><output id="lenout" for="len" aria-live="polite"></output></div>
 <p class="note" id="note"></p>
 <div class="hud"><div class="meta"><span id="prog"></span><span id="score"></span></div><p class="prompt" id="prompt"></p><div class="bar"><i id="fill"></i></div></div>
 <div id="grid" class="grid"></div>
@@ -58,7 +62,7 @@ select,.btn{font:inherit;padding:8px 12px;border-radius:8px;border:1px solid var
 // Subjects are listed in subjects/index.json; each entry points at its own file of pairs.
 var INDEX_URL="subjects/index.json";
 var $=function(id){return document.getElementById(id)};
-var SUB=[],S=null,dir=0,order,idx,score,locked,miss,cells,count,done;
+var SUB=[],S=null,dir=0,len=0,order,idx,score,locked,miss,cells,count,done;
 var sel=$("set");
 
 function fail(msg){
@@ -96,13 +100,20 @@ function setup(){
   if(!can[dir])dir=can[0]?0:1;
   if(!can[0]&&!can[1])return fail("This subject has repeated values on both sides, so it can't be asked either way.");
   $("note").textContent=S.note||"";
+  var N=S.pairs.length,lo=Math.min(10,N),sv=null;
+  try{sv=parseInt(localStorage.getItem("len:"+SUB[sel.selectedIndex].id),10)}catch(e){}
+  len=Math.max(lo,Math.min(N,sv||S.defaultLength||N));
+  var r=$("len");r.min=lo;r.max=N;r.value=len;
+  $("lenrow").style.display=lo<N?"":"none";
+  showLen();
   start();
 }
+function showLen(){$("lenout").textContent=$("len").value+" of "+S.pairs.length}
 function shuf(a){a=a.slice();for(var k=a.length-1;k>0;k--){var j=Math.floor(Math.random()*(k+1));var t=a[k];a[k]=a[j];a[j]=t}return a}
 function ansOf(q){return S.pairs[q][1-dir]}
 function start(){
   $("d0").setAttribute("aria-pressed",dir===0);$("d1").setAttribute("aria-pressed",dir===1);
-  order=shuf(S.pairs.map(function(_,i){return i}));idx=0;score=0;locked=false;miss=[];cells={};count={};done={};
+  order=shuf(S.pairs.map(function(_,i){return i})).slice(0,len);idx=0;score=0;locked=false;miss=[];cells={};count={};done={};
   $("end").innerHTML="";
   var g=$("grid");g.innerHTML="";
   S.pairs.forEach(function(p){var v=p[1-dir];count[v]=(count[v]||0)+1});
@@ -147,6 +158,12 @@ function finish(){
   $("end").innerHTML=h+'</div>';
   $("again").onclick=start;$("again").focus();
 }
+$("len").oninput=function(){if(S)showLen()};
+$("len").onchange=function(){
+  len=+this.value;
+  try{localStorage.setItem("len:"+SUB[sel.selectedIndex].id,len)}catch(e){}
+  if(S)start();
+};
 sel.onchange=loadSubject;
 $("go").onclick=function(){if(S)start()};
 $("d0").onclick=function(){dir=0;if(S)start()};
