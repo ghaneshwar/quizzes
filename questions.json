@@ -67,6 +67,22 @@
   ]
  },
  {
+  "id": "awards-mercury-2026",
+  "category": "Awards",
+  "question": "Who won the 2026 Mercury Music Prize?",
+  "year": 2026,
+  "event": "awards-mercury",
+  "checked": "2026-11-01",
+  "status": "verified",
+  "answer": "RAYE",
+  "detail": "RAYE won the 2026 Mercury Prize for her second album 'This Music May Contain Hope.' at a ceremony at Newcastle's Utilita Arena on 22 October 2026.",
+  "sources": [
+   "https://www.officialcharts.com/chart-news/raye-announced-as-winner-of-2026-mercury-prize/",
+   "https://www.billboard.com/music/awards/2026-mercury-prize-winner-raye-music-may-contain-hope-1236365609/",
+   "https://www.lbc.co.uk/article/raye-wins-2026-mercury-prize-with-album-this-music-may-contain-hope-5HjdkLb_2/"
+  ]
+ },
+ {
   "id": "awards-turner-2025",
   "category": "Awards",
   "question": "Who won the 2025 Turner Prize?",
@@ -589,6 +605,21 @@
   ]
  },
  {
+  "id": "tv-celebtraitors-2026",
+  "category": "UK TV",
+  "question": "Who won the 2026 series of Celebrity Traitors UK (BBC)?",
+  "year": 2026,
+  "event": "tv-celebtraitors",
+  "checked": "2026-11-01",
+  "status": "verified",
+  "answer": "Romesh Ranganathan and Sebastian Croft",
+  "detail": "The two Faithfuls won the Celebrity Traitors series 2 final, which was broadcast on BBC One, and shared a £83,000 prize for their chosen charities.",
+  "sources": [
+   "https://deadline.com/gallery/the-celebrity-traitors-season-2-winner-bbc-one/",
+   "https://www.newsbreak.com/the-independent-517119/4978029205031-who-won-celebrity-traitors-2026-highlights-as-winners-announced-after-epic-final-showdown"
+  ]
+ },
+ {
   "id": "tv-imaceleb-2025",
   "category": "UK TV",
   "question": "Who won the 2025 series of I'm a Celebrity... Get Me Out of Here! (UK, ITV)?",
@@ -661,14 +692,14 @@
   "category": "UK posts",
   "question": "Who is the current Archbishop of Canterbury?",
   "year": 2026,
-  "checked": "2026-10-09",
+  "checked": "2026-11-01",
   "status": "verified",
   "answer": "Sarah Mullally",
   "detail": "Dame Sarah Mullally became the 106th Archbishop of Canterbury and the first woman in the role. Her election was confirmed on 28 January 2026 and she was installed at Canterbury Cathedral on 25 March 2026.",
   "sources": [
    "https://www.archbishopofcanterbury.org/node/32/bishop-sarah-mullally-be-confirmed-archbishop-canterbury",
-   "https://www.npr.org/2026/03/25/nx-s1-5753707/archbishop-canterbury-church-england-sarah-mullally",
-   "https://episcopalnewsservice.org/2026/01/28/sarah-mullally-confirmed-as-106th-archbishop-of-canterbury/"
+   "https://www.anglicancommunion.org/installation-of-the-archbishop-of-canterbury/",
+   "https://www.npr.org/2026/03/25/nx-s1-5753707/archbishop-canterbury-church-england-sarah-mullally"
   ]
  },
  {
@@ -676,7 +707,7 @@
   "category": "UK posts",
   "question": "Who is the current UK Chancellor of the Exchequer?",
   "year": 2026,
-  "checked": "2026-10-09",
+  "checked": "2026-11-01",
   "status": "verified",
   "answer": "John Healey",
   "detail": "John Healey has been Chancellor of the Exchequer since 20 July 2026, when new Prime Minister Andy Burnham appointed him to replace Rachel Reeves.",
@@ -691,15 +722,15 @@
   "category": "UK posts",
   "question": "Who is the current Prime Minister of the United Kingdom, and when did they take office?",
   "year": 2026,
-  "checked": "2026-10-09",
+  "checked": "2026-11-01",
   "status": "verified",
   "answer": "Andy Burnham, who took office on 20 July 2026",
   "detail": "Burnham became Prime Minister on 20 July 2026 after meeting King Charles III. He replaced Keir Starmer, who had agreed to step down, and is the 59th person to hold the office.",
   "sources": [
-   "https://www.nbcnews.com/world/united-kingdom/andy-burnham-british-prime-minister-keir-starmer-labour-king-charles-rcna588324",
-   "https://royalcentral.co.uk/royal-news/the-king-appoints-andy-burnham-as-the-fourth-prime-minister-of-his-reign-218515/",
-   "https://en.wikipedia.org/wiki/Andy_Burnham",
-   "https://www.politics.co.uk/2026/08/andy-burnham-appoints-new-cabinet-whos-in-and-whos-out/"
+   "https://www.pbs.org/newshour/world/uks-new-prime-minister-gathers-his-cabinet-after-sweeping-away-starmer-supporters",
+   "https://sfs.georgetown.edu/news/five-questions-about-new-uk-prime-minister-andy-burnham/",
+   "https://www.museumofpm.org/prime-ministers-of-the-united-kingdom/",
+   "https://en.wikipedia.org/wiki/Prime_Minister_of_the_United_Kingdom"
   ]
  }
 ]
